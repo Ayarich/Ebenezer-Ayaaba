@@ -1,0 +1,12 @@
+'use client'
+import Posts from '@components/Posts'
+
+const page = () => {
+  return (
+    <div>
+       <Posts/>
+    </div>
+  )
+}
+
+export default page
