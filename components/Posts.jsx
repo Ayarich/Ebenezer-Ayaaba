@@ -3,11 +3,11 @@ import Image from "next/image";
 export default async function Posts() {
 
     console.log('Getting Post');
-    const response = await fetch('http://127.0.0.1:8000/api/news', { cache: 'no-store' });
+    const response = await fetch('https://api-ht7g.onrender.com/api/news', { cache: 'no-store' });
     const posts = await response.json();
     console.log('Done Getting Posts');
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-amber-100 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="container mx-auto mt-8">
             {posts.map((post) => (
