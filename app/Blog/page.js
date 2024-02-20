@@ -1,4 +1,4 @@
-'use client'
+
 import Posts from '@components/Posts'
 
 const page = () => {
